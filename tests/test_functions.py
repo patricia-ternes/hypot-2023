@@ -1,5 +1,4 @@
 from hypot.calc import squared, addition, sqroot
-import pytest
 
 # test squared
 def test_squared_even():
