@@ -1,5 +1,5 @@
-Calc Module
---------------------------------
+API reference
+=============
 
 .. automodule:: calc
    :members:

@@ -6,6 +6,8 @@
 Welcome to Hypot's documentation!
 =================================
 
+The hypot package to demo the SWD3 course workflow.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -15,7 +17,7 @@ Welcome to Hypot's documentation!
    functions
 
 Indices and tables
-==================
+------------------
 
 * :ref:`genindex`
 * :ref:`modindex`
