@@ -1,14 +1,7 @@
 ---
 name: Add to project board
 
-on:
-  issues:
-    types:
-      - opened
-      - labeled
-  pull_request:
-    types:
-      - labeled
+on: [issues, pull_request, workflow_dispatch]
 
 jobs:
   add-to-project:
