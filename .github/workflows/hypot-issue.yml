@@ -9,7 +9,7 @@ on:
       - opened
 
 env:
-  project_url: 'https://github.com/users/patricia-ternes/projects/3'
+  ADD_TO_PROJECT_URL: 'https://github.com/users/patricia-ternes/projects/3'
 
 jobs:
   add-to-project:
@@ -20,11 +20,11 @@ jobs:
         with:
           # You can target a project in a different organization
           # to the issue
-          project-url: $project_url
+          project-url: ${{ env.ADD_TO_PROJECT_URL }}
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
       - uses: actions/add-to-project@v0.5.0
         with:
           project-url: $project_url
-          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          github-token: ${{ env.ADD_TO_PROJECT_PAT }}
           labeled: needs-review, size/XL
           label-operator: AND
