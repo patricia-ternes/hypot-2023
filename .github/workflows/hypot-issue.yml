@@ -9,7 +9,7 @@ on:
       - opened
 
 env:
-  project_url: https://github.com/users/patricia-ternes/projects/3
+  project_url: 'https://github.com/users/patricia-ternes/projects/3'
 
 jobs:
   add-to-project:
