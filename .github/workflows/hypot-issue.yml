@@ -7,13 +7,14 @@ on:
   pull_request:
     types:
       - opened
-  
+
+env:
+  project_url: https://github.com/users/patricia-ternes/projects/3
+
 jobs:
   add-to-project:
     name: Add issue to project
     runs-on: ubuntu-latest
-    env:
-      project_url: https://github.com/users/patricia-ternes/projects/3
     steps:
       - uses: actions/add-to-project@v0.5.0
         with:
